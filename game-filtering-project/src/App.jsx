@@ -59,33 +59,43 @@ function App() {
     genre: "FPS"
   },
 ]);
+  const [selectedGame, setSelectedGame] = useState("AnyGenre");
 
   
 
   const handleSelectChange = (e) => {
-      console.log(e.target.value);
-      
+      setSelectedGame(e.target.value);
   }
 
   return (
     <>
-     <select name="" id="select-genre-button" onChange={handleSelectChange}>
-      <option value="">Select genre</option>
+     <select name="" className="select-element" onChange={handleSelectChange}>
+      <option value="AnyGenre">Select Genre</option>
       <option value="FPS">FPS</option>
       <option value="Sandbox">Sandbox</option>
-      <option value="Moba">Moba</option>
+      <option value="MOBA">Moba</option>
       <option value="RPG">RPG</option>
       <option value="Battle-Royale">Battle-Royale</option>
      </select>
      <div className='games-container'>
-      {games.map(game => (
-        <Game 
-        key= {game.title}
-        title= {game.title}
-        releaseDate = {game.releaseDate}
-        genre = {game.genre}
-        />
-      ))}
+      {selectedGame === "AnyGenre" ?
+          games.map(game => (
+            <Game 
+            key= {game.title}
+            title= {game.title}
+            releaseDate = {game.releaseDate}
+            genre = {game.genre}
+            />
+          )) :
+          games.filter(game => game.genre === selectedGame).map(game => (
+            <Game 
+            key= {game.title}
+            title= {game.title}
+            releaseDate = {game.releaseDate}
+            genre = {game.genre}
+            />
+          ))
+      }
      </div>
     </>
   )

@@ -1,12 +1,27 @@
-
+body {
+  background-color: #cad2ff;
+}
+.select-element {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .games-container { 
+  margin: 0 auto;
+  margin-top: 2rem;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 56rem;
-  border: 1px solid black;
+  border: 3px solid #4a3abd;
 }
 
 .game-card {
+  background-color: #acb9ff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   width: 12rem;
   height: 20rem;
   border: 1px solid black;
