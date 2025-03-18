@@ -1,13 +1,24 @@
+
 body {
   background-color: #cad2ff;
-}
-.select-element {
+};
+
+.select-genre-element {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+};
+
+.select-order-element {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+};
+
 .games-container { 
   margin: 0 auto;
   margin-top: 2rem;
@@ -15,7 +26,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 56rem;
   border: 3px solid #4a3abd;
-}
+};
 
 .game-card {
   background-color: #acb9ff;
@@ -27,4 +38,4 @@ body {
   border: 1px solid black;
   border-radius: 10px;
   margin: 1rem;
-} 
+};

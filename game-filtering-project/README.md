@@ -11,3 +11,5 @@ So now I made it so that I return a mapping function that has 4 properties , the
  - Added the main functionability , I can now properly change between game ganres but when initially loading the page , the game container is empty , next time I'll probably make it so that first all the genres are displayed
 
  - Ok I literally now as I am writing this I realized that I can just set the state of the selectedGame to AnyGenre and it will automatically just initially render all of them( man I love react , I really need to get used to this) , I just proved myself again how important it is to write down your thoughts , I should use READMEs all the time.
+
+  - I tried adding alphabetic sorting but its a bit harder than I thought and im stuck in a loop of chatgpt , I n e e d to dettach from it but it sucks now because I s u c k , I'll keep doing some smaller scale projects and very gradually change the difficulty , Im going to put this project on hold , I promise to come back and finish it , as I did with the vanilla js RPS game, trust.
